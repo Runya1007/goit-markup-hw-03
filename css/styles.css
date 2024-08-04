@@ -23,6 +23,12 @@ h6,
 p {
   margin: 0;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* #region header */
 
 /* header */
@@ -119,6 +125,7 @@ p {
 /* #region hero */
 .hero {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 .hero-title {
   font-size: 56px;
@@ -126,6 +133,9 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 .hero-btn {
   font-family: "Roboto", sans-serif;
@@ -136,6 +146,11 @@ p {
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-btn:hover,
@@ -147,8 +162,29 @@ p {
 
 /* #region feature */
 .feature {
+  padding: 120px 0;
 }
+
 .title-invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.feature-list {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-item {
+  width: calc((100% - 76px) / 4);
 }
 .title-feature {
   font-weight: 500;
@@ -156,6 +192,7 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .text-feature {
   font-size: 16px;
@@ -168,6 +205,7 @@ p {
 /* #region team */
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 .title-team {
   font-size: 36px;
@@ -176,9 +214,21 @@ p {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 .menu-team {
   background-color: #fff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
+}
+
+.div-text-team {
+  padding: 32px 0;
 }
 .title-name {
   font-weight: 500;
@@ -187,6 +237,7 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .text-profession {
   font-size: 16px;
@@ -199,6 +250,7 @@ p {
 
 /* #region Portfolio */
 .section-portfolio {
+  padding: 120px 0;
 }
 .title-portfolio {
   font-size: 36px;
@@ -207,6 +259,25 @@ p {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.item-portfolio {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.div-text {
+  padding: 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
 .title-project {
   font-weight: 500;
@@ -214,6 +285,7 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .text-project {
   font-size: 16px;
@@ -226,14 +298,20 @@ p {
 /* #region footer */
 .section-footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
+
 .logo-span-footer {
   color: #f4f4fd;
+  display: inline-block;
+  padding-bottom: 16px;
 }
 .text-footer {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
 /* #endregion footer */
